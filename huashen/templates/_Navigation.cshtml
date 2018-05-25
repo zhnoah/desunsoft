@@ -1,0 +1,11 @@
+@using Desunsoft.Huashen.Main.Host.Extensions
+
+<ul id="Navigation" class="nav nav-tabs">
+    <li role="presentation">
+        @Html.NavTabsLink("{{这里改成 Action}}", "{{这里改成 Controller}}", new { Area = "{{这里改成 Area}}" }, "#{{这里改成 Fragment，如果没有则此参数可删除。}}")
+            @* 此处是链接的显示外观，如果有需要的话可以自己定制。 *@
+            <i class="fa fa-{{这里改成需要的图标}}" aria-hidden="true"></i>
+            <span>@Localizer["{{这里是链接显示的资源编号}}"]</span>
+        @Html.EndNavTabsLink()
+    </li>
+</ul>
